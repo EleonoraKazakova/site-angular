@@ -1,0 +1,18 @@
+<div class="select" >
+    
+    <select 
+        [(ngModel)]="currentChoice" 
+        [value]="currentChoice"
+        (change)="showChoice()"
+    >
+        <option value="0">Select fruits:</option>
+        <option value="Apples">Apples</option>
+        <option value="Bananas">Bananas</option>
+        <option value="Peaches">Peaches</option>
+        
+    </select>
+    
+    <p>Your choice: {{ currentChoice }} {{number}}</p>
+
+</div>
+
